@@ -960,6 +960,7 @@ a:hover { color: var(--color-primary-light); }
    ========================================== */
 
 @media (max-width: 768px) {
+   .row{gap: 15px;}
     .hero-buttons { flex-direction: column; }
     .btn-lg { width: 100%; }
     .about-visual { gap: 1rem; }
@@ -1027,4 +1028,4 @@ a:hover { color: var(--color-primary-light); }
     .scroll-indicator { display: none; }
 }
 
-.row{gap: 15px;}
+ 
