@@ -1,224 +1,601 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with RenatoDev.">
-    <meta name="author" content="RenatoDev">
-    <title>RenatoDev Landing page </title>
-    <!-- font icons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Renato Guerra - Especialista en Shopify Development, Frontend Development y Optimización de Performance. Crea experiencias web rápidas, escalables y de alto rendimiento.">
+    <meta name="keywords" content="Shopify, Liquid, Frontend, Full Stack, Performance, SEO, WooCommerce, WordPress">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Renato Guerra - Shopify & Full Stack Developer">
+    <meta property="og:description" content="Especializado en crear experiencias web rápidas, optimizadas y escalables para Shopify, WordPress y aplicaciones modernas.">
+    <meta property="og:url" content="https://renatoguerra.dev">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Renato Guerra - Shopify & Full Stack Developer">
+    <meta name="twitter:description" content="Especializado en Shopify, Frontend, Performance y SEO técnico">
+    
+    <!-- Schema.org Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Renato Guerra",
+      "url": "https://renatoguerra.dev",
+      "image": "https://renatoguerra.dev/assets/imgs/avatar.jpg",
+      "sameAs": [
+        "https://linkedin.com/in/renatoguerra",
+        "https://github.com/renatoguerra",
+        "https://twitter.com/renatoguerra"
+      ],
+      "jobTitle": "Shopify Developer & Full Stack Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Renato Guerra"
+      }
+    }
+    </script>
+    
+    <title>Renato Guerra | Shopify Developer & Full Stack Engineer</title>
+    <link rel="canonical" href="https://renatoguerra.dev">
+    <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico">
+    
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Themify Icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + JohnDoe main styles -->
-	<link rel="stylesheet" href="assets/css/renato.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/renato.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-     <header class="header">
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
         <div class="container">
-            <ul class="social-icons pt-3">
-                
-                <li class="social-item"><a class="social-link text-light" href="https://www.youtube.com/@RenatoDevs"><i class="ti-youtube" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/rnatog1/"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://www.tiktok.com/@renatodevps/"><i class="ti-sharethis-alt" aria-hidden="true"></i></a></li>
-            </ul>  
-            <div class="header-content">
-                <h4 class="header-subtitle">Hola, soy</h4>
-                <h1 class="header-title">RenatoDev</h1>
-                <h6 class="header-mono" >Frond end Designer | Programador</h6>
-            </div>
-        </div>
-    </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="brand-icon">RG</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">Acerca de mi</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav brand">
-                    <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
-                    <li class="brand-txt">
-                        <h5 class="brand-title">RenatoDev</h5>
-                        <div class="brand-subtitle">Web Designer | Programador</div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#service" class="nav-link">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#blog" class="nav-link">Tutoriales</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#specialties">Especialidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Quien Soy ?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">Soy el arquitecto digital que da vida a tus ideas</h5>
-                <p class="mt-20">Soy el maestro de las tecnologías, el solucionador de problemas y el creador de soluciones elegantes.</p>
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Informacion Personal</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                    <li><span>Email</span> : 5364609@gmail.com</li>
-                    <li><span>Phone</span> : +51 985-933-549</li>
-                    <li><span>Whatsapp</span> : <a href="https://api.whatsapp.com/send/?phone=51985933549">Dale Click para chatear</a> </li>
-                    <li><span>Pais</span> : Lima , Peru.</li>
-                </ul>  
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Mi Experiencia</h3>
-                <span class="line mb-5"></span>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Shopify</h6>
-                        <p class="subtitle">Mas de +4 años de experiencia trabajando para tienda de Shopify.</p>
-                        <hr>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-lg-6 hero-content">
+                        <div class="fade-up">
+                            <h1 class="hero-title">Renato Guerra</h1>
+                            <div class="hero-subtitle">
+                                <span class="subtitle-item fade-in-sequence">Shopify Developer</span>
+                                <span class="subtitle-item fade-in-sequence">Frontend Developer</span>
+                                <span class="subtitle-item fade-in-sequence">Performance Specialist</span>
+                            </div>
+                            <p class="hero-description">
+                                Especializado en crear experiencias web rápidas, optimizadas y escalables para Shopify, WordPress y aplicaciones modernas. Core Web Vitals, SEO técnico y arquitectura full stack.
+                            </p>
+                            <div class="hero-buttons">
+                                <a href="#projects" class="btn btn-primary btn-lg btn-hover">Ver proyectos</a>
+                                <a href="#contact" class="btn btn-outline btn-lg btn-hover">Contactarme</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Desarrollador Web</h6>
-                        <p class="subtitle">Mas de +2 años trabajando en proyectos Web.</p>
-                        <hr>
+                    <div class="col-lg-6 hero-image">
+                        <div class="floating-card">
+                            <div class="glass-card">
+                                <div class="card-icon">
+                                    <i class="ti-rocket"></i>
+                                </div>
+                                <h3>Rendimiento</h3>
+                                <p>Optimizaciones que aceleran</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
 
- 
+    <!-- Tech Stack Slider -->
+    <section class="tech-slider">
+        <div class="slider-wrapper">
+            <div class="tech-items">
+                <div class="tech-item"><span>HTML</span></div>
+                <div class="tech-item"><span>CSS</span></div>
+                <div class="tech-item"><span>JavaScript</span></div>
+                <div class="tech-item"><span>TypeScript</span></div>
+                <div class="tech-item"><span>React</span></div>
+                <div class="tech-item"><span>Next.js</span></div>
+                <div class="tech-item"><span>Node.js</span></div>
+                <div class="tech-item"><span>Express</span></div>
+                <div class="tech-item"><span>PHP</span></div>
+                <div class="tech-item"><span>Laravel</span></div>
+                <div class="tech-item"><span>Shopify</span></div>
+                <div class="tech-item"><span>Liquid</span></div>
+                <div class="tech-item"><span>WooCommerce</span></div>
+                <div class="tech-item"><span>WordPress</span></div>
+                <div class="tech-item"><span>PostgreSQL</span></div>
+                <div class="tech-item"><span>Git</span></div>
+                <div class="tech-item"><span>GitHub</span></div>
+                <div class="tech-item"><span>REST API</span></div>
+                <div class="tech-item"><span>Make</span></div>
+                <div class="tech-item"><span>Zoho</span></div>
+                <div class="tech-item"><span>Kommo</span></div>
+            </div>
+            <div class="tech-items" aria-hidden="true">
+                <div class="tech-item"><span>HTML</span></div>
+                <div class="tech-item"><span>CSS</span></div>
+                <div class="tech-item"><span>JavaScript</span></div>
+                <div class="tech-item"><span>TypeScript</span></div>
+                <div class="tech-item"><span>React</span></div>
+                <div class="tech-item"><span>Next.js</span></div>
+                <div class="tech-item"><span>Node.js</span></div>
+                <div class="tech-item"><span>Express</span></div>
+                <div class="tech-item"><span>PHP</span></div>
+                <div class="tech-item"><span>Laravel</span></div>
+                <div class="tech-item"><span>Shopify</span></div>
+                <div class="tech-item"><span>Liquid</span></div>
+                <div class="tech-item"><span>WooCommerce</span></div>
+                <div class="tech-item"><span>WordPress</span></div>
+                <div class="tech-item"><span>PostgreSQL</span></div>
+                <div class="tech-item"><span>Git</span></div>
+                <div class="tech-item"><span>GitHub</span></div>
+                <div class="tech-item"><span>REST API</span></div>
+                <div class="tech-item"><span>Make</span></div>
+                <div class="tech-item"><span>Zoho</span></div>
+                <div class="tech-item"><span>Kommo</span></div>
+            </div>
+        </div>
+    </section>
 
-    <section class="section bg-dark text-center">
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre mí</h2>
+                <p class="section-subtitle">+4 años especializado en Shopify, Frontend y Performance</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <div class="glass-container">
+                            <div class="about-visual">
+                                <div class="stat-badge">+100 Proyectos</div>
+                                <div class="stat-badge">+4 Años</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <p class="about-text">
+                            Soy un desarrollador especializado en crear experiencias web de alto rendimiento. Mi expertise abarca desde la optimización de tiendas Shopify hasta arquitecturas full stack completas.
+                        </p>
+                        <p class="about-text">
+                            Con más de 4 años de experiencia, he trabajado en proyectos de alto impacto enfocándome en Core Web Vitals, SEO técnico y arquitectura escalable.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <div class="stat-number" data-target="100">0</div>
+                                <span>Proyectos completados</span>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" data-target="95">0</div>
+                                <span>PageSpeed Insight</span>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" data-target="100">0</div>
+                                <span>Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="specialties" id="specialties">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Especialidades</h2>
+                <p class="section-subtitle">Áreas donde soy especialista</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="specialty-card glass-card">
+                        <div class="card-icon gradient-icon">
+                            <i class="ti-shopping-cart"></i>
+                        </div>
+                        <h3>Shopify Development</h3>
+                        <ul class="specialty-list">
+                            <li>Liquid Templates</li>
+                            <li>Shopify Sections</li>
+                            <li>Checkout Customization</li>
+                            <li>Cart Drawer Integration</li>
+                            <li>Shopify APIs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="specialty-card glass-card">
+                        <div class="card-icon gradient-icon">
+                            <i class="ti-bolt"></i>
+                        </div>
+                        <h3>Performance & SEO</h3>
+                        <ul class="specialty-list">
+                            <li>Core Web Vitals</li>
+                            <li>LCP Optimization</li>
+                            <li>CLS Prevention</li>
+                            <li>PageSpeed Insights</li>
+                            <li>SEO Técnico</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="specialty-card glass-card">
+                        <div class="card-icon gradient-icon">
+                            <i class="ti-layers"></i>
+                        </div>
+                        <h3>Full Stack Development</h3>
+                        <ul class="specialty-list">
+                            <li>Node.js & Express</li>
+                            <li>PHP & Laravel</li>
+                            <li>PostgreSQL</li>
+                            <li>Frontend Moderno</li>
+                            <li>REST APIs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="specialty-card glass-card">
+                        <div class="card-icon gradient-icon">
+                            <i class="ti-wordpress"></i>
+                        </div>
+                        <h3>WooCommerce & WordPress</h3>
+                        <ul class="specialty-list">
+                            <li>WooCommerce Setup</li>
+                            <li>Custom Plugins</li>
+                            <li>WordPress Optimization</li>
+                            <li>Theme Development</li>
+                            <li>Migration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="specialty-card glass-card">
+                        <div class="card-icon gradient-icon">
+                            <i class="ti-exchange-vertical"></i>
+                        </div>
+                        <h3>Automatizaciones</h3>
+                        <ul class="specialty-list">
+                            <li>Make.com</li>
+                            <li>REST APIs</li>
+                            <li>Zoho Integration</li>
+                            <li>Kommo Integration</li>
+                            <li>Webhook Setup</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="specialty-card glass-card">
+                        <div class="card-icon gradient-icon">
+                            <i class="ti-mobile"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <ul class="specialty-list">
+                            <li>Mobile First</li>
+                            <li>Cross-browser</li>
+                            <li>Accessibility</li>
+                            <li>UI/UX</li>
+                            <li>Animations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-4 col-lg-4">
-                    <div class="row ">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">+300</h1>
-                            <p class="text-light mb-1">Horas trabajadas</p>
-                        </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-box">
+                        <div class="stat-value" data-target="100">+0</div>
+                        <p class="stat-label">Proyectos</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-4">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">+100</h1>
-                            <p class="text-light mb-1">Proyectos terminados</p>
-                        </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-box">
+                        <div class="stat-value" data-target="4">0</div>
+                        <p class="stat-label">Años Shopify</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-4">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">+100</h1>
-                            <p class="text-light mb-1">Clientes felices</p>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="service">
-        <div class="container">
-            <h2 class="mb-5 pb-4"><span class="text-danger">Mis</span> Servicios</h2>
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-vector text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">FUNCIONALIDADES</h5>
-                            <P class="subtitle">En nuestro servicio integral de desarrollo web, fusionamos las tecnologías líderes en la creación de experiencias digitales excepcionales. Desde funciones interactivas impulsadas por JavaScript hasta la flexibilidad de Liquid, combinadas con la estructura sólida de HTML y estilos elegantes con CSS, ofrecemos un enfoque completo para hacer que tu sitio web destaque</P>
-                        </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-box">
+                        <div class="stat-value" data-target="95">0</div>
+                        <p class="stat-label">PageSpeed</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-write text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">SEO</h5>
-                            <P class="subtitle">En nuestro servicio especializado en SEO, fusionamos estrategias probadas con las últimas tendencias en optimización para motores de búsqueda. Desde la investigación de palabras clave hasta la implementación técnica, nuestro enfoque holístico garantiza que tu sitio no solo sea visible, sino que también destaque entre la competencia.</P>
-                        </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-box">
+                        <div class="stat-value" data-target="100">0</div>
+                        <p class="stat-label">Responsive</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-   
-
- 
-    <!-- End of portfolio section -->
-
-    <section class="section" id="blog">
+    <!-- Timeline Section -->
+    <section class="timeline-section">
         <div class="container">
-            <h2 class="mb-5">Ultimos<span class="text-danger">Tutoriales</span></h2>
-            <div class="row">
-                <div class="blog-card">
-                    <iframe style="width: 100%;height: 500px;" src="https://www.youtube.com/embed/xWoET7lkdq8" frameborder="0" allowfullscreen></iframe> 
+            <div class="section-header">
+                <h2 class="section-title">Mi Experiencia</h2>
+                <p class="section-subtitle">Evolución de mi carrera profesional</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-content">
+                        <h3>Frontend Development</h3>
+                        <p>Iniciando especialización en desarrollo frontend moderno</p>
+                    </div>
                 </div>
-                <!-- end of blog wrapper -->
-                <!-- blog-card -->
-                <div class="blog-card">
-                    <iframe style="width: 100%;height: 500px;" src="https://www.youtube.com/embed/JNzv5m5VUyQ" frameborder="0" allowfullscreen></iframe>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3>Shopify Specialization</h3>
+                        <p>Profundización en Shopify y Liquid templates</p>
+                    </div>
                 </div>
-                <!-- end of blog wrapper -->
-                <!-- blog-card -->
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h3>WooCommerce Expertise</h3>
+                        <p>Expansión a WooCommerce y WordPress</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2025</div>
+                    <div class="timeline-content">
+                        <h3>Full Stack</h3>
+                        <p>Desarrollo full stack con Node, Express y bases de datos</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2026</div>
+                    <div class="timeline-content">
+                        <h3>Automatizaciones</h3>
+                        <p>Especialización en automatizaciones y APIs</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    
-    <footer class="footer py-3">
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
         <div class="container">
-            <p class="small mb-0 text-light">
-                &copy; <script>document.write(new Date().getFullYear())</script> Creado por <a href="https://www.youtube.com/@RenatoDevs" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">RenatoDev</span></a> 
-            </p>
+            <div class="section-header">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <p class="section-subtitle">Trabajos recientes y casos de éxito</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card glass-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <i class="ti-shopping-cart"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Tienda Shopify Premium</h3>
+                            <p class="project-desc">Tienda de e-commerce de alta conversión con Liquid y secciones personalizadas</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Shopify</span>
+                                <span class="tech-badge">Liquid</span>
+                                <span class="tech-badge">Performance</span>
+                            </div>
+                            <a href="#" class="project-link">Ver proyecto →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card glass-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <i class="ti-layout"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Sitio Full Stack</h3>
+                            <p class="project-desc">Aplicación web completa con Node.js, Express y PostgreSQL</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                                <span class="tech-badge">React</span>
+                            </div>
+                            <a href="#" class="project-link">Ver proyecto →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card glass-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <i class="ti-bolt"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Optimización Performance</h3>
+                            <p class="project-desc">Mejora de Core Web Vitals y PageSpeed Insights en tienda existente</p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Performance</span>
+                                <span class="tech-badge">SEO</span>
+                                <span class="tech-badge">Optimization</span>
+                            </div>
+                            <a href="#" class="project-link">Ver proyecto →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Testimonios</h2>
+                <p class="section-subtitle">Lo que dicen mis clientes</p>
+            </div>
+            <div class="testimonials-carousel">
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-rating">
+                        <i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Renato llevó nuestro store de Shopify a otro nivel. La optimización de performance fue increíble, mejoramos el PageSpeed a 95+."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div>
+                            <h4>Juan García</h4>
+                            <p>Founder, E-commerce Store</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-rating">
+                        <i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Excelente profesional. Entrega a tiempo, código limpio y muy atento a los detalles. Definitivamente volvería a trabajar con Renato."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div>
+                            <h4>María López</h4>
+                            <p>CEO, Digital Agency</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-rating">
+                        <i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Las automatizaciones que implementó Renato nos ahorraron horas de trabajo manual. Profesional recomendado al 100%."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div>
+                            <h4>Carlos Rodríguez</h4>
+                            <p>Operations Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content glass-card">
+                <h2>¿Tienes un proyecto?</h2>
+                <p>Construyamos algo increíble juntos</p>
+                <a href="#contact" class="btn btn-primary btn-lg btn-hover">Contactarme</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-subtitle">Hablemos sobre tu proyecto</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Conectemos</h3>
+                    <p>Estoy disponible para nuevos proyectos y colaboraciones</p>
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <i class="ti-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class="ti-linkedin"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+                            <i class="ti-youtube"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                            <i class="ti-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <i class="ti-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="mb-3">
+                        <input type="text" class="form-control glass-input" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control glass-input" placeholder="Tu email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control glass-input" rows="5" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-hover">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h4>RG</h4>
+                    <p>Shopify Developer & Full Stack Engineer</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="ti-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="ti-linkedin"></i>
+                    </a>
+                    <a href="mailto:hello@renatoguerra.dev" aria-label="Email">
+                        <i class="ti-email"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Renato Guerra. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-    
-    <!-- Google mpas -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
-
-    <!-- JohnDoe js -->
+    <!-- Scripts -->
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/johndoe.js"></script>
-
 </body>
 </html>
